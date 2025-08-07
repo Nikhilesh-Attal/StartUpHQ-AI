@@ -1,0 +1,99 @@
+# StartUpHQ-AI Project Summary
+
+## Project Overview
+StartUpHQ-AI is a modern web application built with Next.js 15 and React 18, featuring AI capabilities through Google's Genkit. The project follows a modern web development stack with TypeScript and Tailwind CSS for styling.
+
+## Technology Stack
+- **Frontend Framework**: Next.js 15.3.3 with TypeScript
+- **UI Components**: Radix UI components with custom styling
+- **Styling**: Tailwind CSS with custom configuration
+- **AI Integration**: Google's Genkit AI
+- **Authentication**: Firebase
+- **Backend Services**: Appwrite
+- **Form Handling**: React Hook Form with Zod validation
+- **Icons**: Lucide React
+- **State Management**: React Context API
+
+## Project Structure
+
+### Main Directories
+- `/src/app` - Main application routes and pages
+  - `/(app)` - Authenticated application routes
+  - `/(auth)` - Authentication related pages
+  - `/(public)` - Publicly accessible pages
+- `/src/components` - Reusable UI components
+- `/src/ai` - AI-related functionality and configurations
+- `/src/context` - React context providers
+- `/src/hooks` - Custom React hooks
+- `/src/lib` - Utility functions and configurations
+
+### Key Features
+1. **Authentication System**
+   - User registration and login flows
+   - Protected routes for authenticated users
+
+2. **AI Integration**
+   - Google's Genkit AI implementation
+   - Custom AI development server setup
+
+3. **Modern UI/UX**
+   - Responsive design with Tailwind CSS
+   - Accessible UI components from Radix UI
+   - Dark/light mode support
+
+4. **Development Tools**
+   - TypeScript for type safety
+   - ESLint and Prettier for code quality
+   - Turbopack for fast development builds
+
+## Development Setup
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Set up environment variables in `.env` file
+
+3. Run development server:
+   ```bash
+   npm run dev
+   ```
+
+4. For AI development:
+   ```bash
+   npm run genkit:dev
+   ```
+
+## Dependencies
+- Next.js 15.3.3
+- React 18.3.1
+- TypeScript
+- Tailwind CSS
+- Radix UI components
+- Firebase
+- Appwrite
+- Genkit AI
+- React Hook Form
+- date-fns
+- clsx
+- class-variance-authority
+
+## Scripts
+- `dev`: Start development server with Turbopack
+- `build`: Create production build
+- `start`: Start production server
+- `lint`: Run ESLint
+- `typecheck`: Run TypeScript type checking
+- `genkit:dev`: Start Genkit AI development server
+- `genkit:watch`: Watch mode for Genkit development
+
+## Environment Variables
+- Next.js environment variables
+- Firebase configuration
+- Appwrite configuration
+- Google AI API keys (secured)
+
+## Notes
+- The project uses modern React patterns including Server Components and Server Actions
+- Implements best practices for security and performance
+- Follows a component-based architecture for maintainability
